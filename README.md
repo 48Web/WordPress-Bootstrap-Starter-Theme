@@ -4,7 +4,6 @@ WordPress-Bootstrap-Starter-Theme
 A responsive WordPress starter theme built on Twitter Bootstrap
 
 Kudos
-_____
-
-**Twitter Bootstrap** - http://twitter.github.com/bootstrap/
-**Options Framework** - https://github.com/devinsays/options-framework-theme
+-----
++ **Twitter Bootstrap** - http://twitter.github.com/bootstrap/
++ **Options Framework** - https://github.com/devinsays/options-framework-theme
