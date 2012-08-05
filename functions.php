@@ -6,7 +6,7 @@ if (!empty($_SERVER['SCRIPT_FILENAME']) && 'functions.php' == basename($_SERVER[
 // Thumbnail Support
 add_theme_support( 'post-thumbnails' );
 
-// load up jQuery from Google CDN
+// load up jQuery and Twitter Bootstrap
 if( !is_admin()){
    wp_deregister_script('jquery'); 
    wp_register_script('jquery', ("https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"), false, '1.7.2'); 
@@ -14,6 +14,18 @@ if( !is_admin()){
 
    wp_register_script('bootstrap', (get_bloginfo('template_directory') .'/js/bootstrap.min.js'), false, '2.0'); 
    wp_enqueue_script('bootstrap');
+}
+
+/* 
+ * Loads the Options Panel
+ *
+ * If you're loading from a child theme use stylesheet_directory
+ * instead of template_directory
+ */
+ 
+if ( !function_exists( 'optionsframework_init' ) ) {
+	define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/' );
+	require_once dirname( __FILE__ ) . '/lib/admin/options-framework/options-framework.php';
 }
 
 // Add awesome brower classes to body tag
