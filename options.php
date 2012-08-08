@@ -38,22 +38,22 @@ function optionsframework_options() {
 	$options = array();
 
 	$options[] = array(
-		'name' => __('Basic Settings', 'options_framework_theme'),
+		'name' => __('Basic Settings', 'woordpress-bootsrap'),
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => __('Homepage', 'options_framework_theme'),
-		'desc' => __('Select a Homepage or default to recent posts', 'options_framework_theme'),
-		'id' => 'homepage_select',
-		'type' => 'select',
-		'options' => $options_pages);
+		'name' => __('Facebook Comments', 'woordpress-bootsrap'),
+		'desc' => __('Check if you want to use Facebook for commenting. If you want to use built-in WordPress comments, uncheck this box.', 'woordpress-bootsrap'),
+		'id' => 'use_facebook_comments',
+		'std' => '1',
+		'type' => 'checkbox');
 
 	$options[] = array(
-		'name' => __('Advanced Settings', 'options_framework_theme'),
+		'name' => __('Advanced Settings', 'woordpress-bootsrap'),
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => __('Responsive Theme', 'options_framework_theme'),
+		'name' => __('Responsive Theme', 'woordpress-bootsrap'),
 		'desc' => __('If you select responsive your site will work on mobile devices and tablets as well. this is a good thing.', 'woordpress-bootsrap'),
 		'id' => 'responsive_theme',
 		'std' => '1',

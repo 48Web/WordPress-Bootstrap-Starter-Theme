@@ -27,7 +27,8 @@ if ( !function_exists( 'optionsframework_init' ) ) {
 	define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/lib/admin/options-framework/' );
 	require_once dirname( __FILE__ ) . '/lib/admin/options-framework/options-framework.php';
 
-	define( 'IS_RESPONSIVE', of_get_option('responsive_theme'));	
+	define( 'IS_RESPONSIVE', of_get_option('responsive_theme'));
+	define( 'USE_FACEBOOK_COMMENTS', of_get_option('use_facebook_comments'));
 }
 
 // Add awesome brower classes to body tag
