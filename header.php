@@ -19,10 +19,6 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/theme.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/wp.css">
 
-	<!-- Javascript -->
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src=""></script>
-
 	<?php wp_head(); ?>
 	
 </head>
