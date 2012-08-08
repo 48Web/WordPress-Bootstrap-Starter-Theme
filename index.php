@@ -1,5 +1,8 @@
-<?php /* --[ Homepage ] -- */ ?>
-<?php get_header(); ?>
+<?php 
+    /* --[ Homepage ] -- */ 
+    get_header(); 
+?>
+
 <div class="row<?php if (IS_RESPONSIVE) echo '-fluid' ?>">
 	<div class="span10">
 	    <?php if (have_posts()): while (have_posts()): the_post(); ?>

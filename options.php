@@ -27,10 +27,29 @@ function optionsframework_option_name() {
 
 function optionsframework_options() {
 
+	// Pull all the pages into an array
+	$options_pages = array();
+	$options_pages_obj = get_pages('sort_column=post_parent,menu_order');
+	$options_pages[''] = 'Select a page:';
+	foreach ($options_pages_obj as $page) {
+		$options_pages[$page->ID] = $page->post_title;
+	}
+
 	$options = array();
 
 	$options[] = array(
 		'name' => __('Basic Settings', 'options_framework_theme'),
+		'type' => 'heading');
+
+	$options[] = array(
+		'name' => __('Homepage', 'options_framework_theme'),
+		'desc' => __('Select a Homepage or default to recent posts', 'options_framework_theme'),
+		'id' => 'homepage_select',
+		'type' => 'select',
+		'options' => $options_pages);
+
+	$options[] = array(
+		'name' => __('Advanced Settings', 'options_framework_theme'),
 		'type' => 'heading');
 
 	$options[] = array(
