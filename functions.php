@@ -82,7 +82,7 @@ if ( function_exists('register_sidebar') )
 function theme_addmenus() {
 	register_nav_menus(
 		array(
-			'main_nav' => 'The Main Menu',
+			'primary-menu' => 'Main Navigation Menu',
 		)
 	);
 }
