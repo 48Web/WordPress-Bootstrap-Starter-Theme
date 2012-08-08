@@ -10,16 +10,16 @@
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed (<?php bloginfo('language'); ?>)" href="<?php bloginfo('atom_url'); ?>" />
 	<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/img/favicon.ico" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-	
+
 	<!--Stylesheets-->
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/theme.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/wp.css">
-	
-    <!-- Javascript -->
-    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src=""></script>
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/wp.css">
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src=""></script>
 
 	<?php wp_head(); ?>
 	
