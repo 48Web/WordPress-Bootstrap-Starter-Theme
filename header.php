@@ -16,6 +16,7 @@
 	<?php if(IS_RESPONSIVE): ?>
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap-responsive.min.css">
 	<?php endif; ?>
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/font-awesome.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/theme.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/wp.css">
 
