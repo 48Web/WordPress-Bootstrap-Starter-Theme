@@ -43,14 +43,14 @@
 				  </a>
 				  <a class="brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
 				  <div class="nav-collapse">
-				  	<?php 	if ( has_nav_menu( 'primary-menu' ) ): 
-								wp_nav_menu( array( 'container' => false, 'menu_class' => 'nav', 'theme_location' => 'primary-menu', 'fallback_cb' => 'display_home' ) );
-							else: ?>
-								<ul class="nav">
-									<li><a href="<?php echo home_url(); ?>/">Home</a></li>
-									<?php wp_list_pages('title_li=' ); ?>
-							    </ul><!-- end .menu -->
- 					<?php 	endif;	?>
+				  	<?php if (has_nav_menu('primary-menu')): 
+							wp_nav_menu( array( 'container' => false, 'menu_class' => 'nav', 'theme_location' => 'primary-menu', 'fallback_cb' => 'display_home' ) );
+					else: ?>
+						<ul class="nav">
+							<li><a href="<?php echo home_url(); ?>/">Home</a></li>
+							<?php wp_list_pages('title_li=' ); ?>
+					    </ul><!-- end .menu -->
+ 					<?php endif;	?>
 				  </div><!--/.nav-collapse -->
 				</div>
 			</div>
