@@ -17,7 +17,8 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/font-awesome.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/wp.css">
-
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css">
+	
 	<?php wp_head(); ?>
 	
 </head>
