@@ -53,10 +53,10 @@ function optionsframework_options() {
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => __('Responsive Theme', 'woordpress-bootsrap'),
-		'desc' => __('If you select responsive your site will work on mobile devices and tablets as well. this is a good thing.', 'woordpress-bootsrap'),
+		'name' => __('Fluid Layout', 'woordpress-bootsrap'),
+		'desc' => __('If you select fluid layout your site will be completely fluid (ie full screen width) based on the width of the viewport', 'woordpress-bootsrap'),
 		'id' => 'responsive_theme',
-		'std' => '1',
+		'std' => '0',
 		'type' => 'checkbox');
 
 	return $options;

@@ -1,6 +1,6 @@
 <?php /* --[ 404 ] -- */ ?>
 <?php get_header(); ?>
-<div class="row<?php if (IS_RESPONSIVE) echo '-fluid' ?>">
+<div class="row<?php if (IS_FLUID) echo '-fluid' ?>">
 	<div id="content" class="span12">
 	    <h1>Error: 404 ... Nothing here!</h1>
 	    <p>These aren't the droids you're looking for... Can we help you find something?</p>

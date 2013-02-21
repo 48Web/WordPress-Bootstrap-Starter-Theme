@@ -1,6 +1,6 @@
 <?php /* --[ Single Page Template ] -- */ ?>
 <?php get_header(); ?>
-<div class="row<?php if (IS_RESPONSIVE) echo '-fluid' ?>">
+<div class="row<?php if (IS_FLUID) echo '-fluid' ?>">
 	<div id="content" class="span9">
 	    <?php if (have_posts()): while (have_posts()): the_post(); ?>
             <div class="post">

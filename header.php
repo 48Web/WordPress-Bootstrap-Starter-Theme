@@ -35,7 +35,7 @@
 	<header id="header">
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
-				<div class="container<?php if (IS_RESPONSIVE) echo '-fluid' ?>">
+				<div class="container<?php if (IS_FLUID) echo '-fluid' ?>">
 				  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 				    <span class="icon-bar"></span>
 				    <span class="icon-bar"></span>
@@ -56,4 +56,4 @@
 			</div>
 		</div>
 	</header>
-	<div id="container" class="container<?php if (IS_RESPONSIVE) echo '-fluid' ?>">
+	<div id="container" class="container<?php if (IS_FLUID) echo '-fluid' ?>">
